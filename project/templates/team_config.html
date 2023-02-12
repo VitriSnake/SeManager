@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Team setup | SeManager</title>
+        <link rel="icon" href="/static/favicon.png"/>
+        <link rel="stylesheet" href="/static/css/team-setup.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Setup application</h2>
+            <form action="/setup/step1/form" method="POST">
+              <input type="text" class="email" placeholder="Admin email">
+              <br />
+                  <input type="text" class="username" placeholder="Admin username">
+              <br/>
+              <input type="text" class="password" placeholder="Admin password">
+              <br />
+              <input type="text" class="team" placeholder="Team name">
+            <br/>
+            <input type="submit" class="signin signup">
+              <span>Install > </span>
+            </button>
+            </form>
+          </div>
+          <script src="/static/js/team-setup.js"></script>
+    </body>
+</html>
