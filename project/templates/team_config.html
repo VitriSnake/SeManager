@@ -7,20 +7,29 @@
     </head>
     <body>
         <div class="container">
-            <h2>Setup application</h2>
+            <h1><strong>Launch</strong> your workspace now.</h1>
             <form action="/setup/step1/form" method="POST">
+              <h3 class="admin setup">Setup admin user</h3>
+              <br />
               <input type="text" class="email" placeholder="Admin email">
               <br />
-                  <input type="text" class="username" placeholder="Admin username">
+              <input type="text" class="username" placeholder="Admin username">
               <br/>
               <input type="text" class="password" placeholder="Admin password">
               <br />
+              <h3 class="admin setup">Setup your team</h3>
               <input type="text" class="team" placeholder="Team name">
             <br/>
-            <input type="submit" class="signin signup">
-              <span>Install > </span>
-            </button>
+            <input type="submit" class="signin signup" value="Setup > " onClick="setup()">
             </form>
+          </div>
+          <div class="loading" id="loading">
+            <img src="/static/favicon.png" width="250" />
+            <h1>Creating your workspace... </h1>
+            <div class="footer">
+              <p>SeManager by <span class="celtiumc">CeltiumC</span></p>
+            </div>
+          </div>
           </div>
           <script src="/static/js/team-setup.js"></script>
     </body>
