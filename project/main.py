@@ -4,13 +4,12 @@ from .models import User
 import json
 from . import db
 
-with open('./team.json', 'r') as team_file:
-    team_data = json.load(team_file)
-
 main = Blueprint('main', __name__)
 
 @main.route('/')
 def join():
+    with open('./team.json', 'r') as team_file:
+        team_data = json.load(team_file)
     if team_data['setup'] == False:
         return redirect('/setup')
     else:

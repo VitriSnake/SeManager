@@ -11,14 +11,14 @@
             <form action="/setup/step1/form" method="POST">
               <h3 class="admin setup">Setup admin user</h3>
               <br />
-              <input type="text" class="email" placeholder="Admin email">
+              <input type="text" name="email" class="email" placeholder="Admin email">
               <br />
-              <input type="text" class="username" placeholder="Admin username">
+              <input type="text" name="user" class="username" placeholder="Admin username">
               <br/>
-              <input type="text" class="password" placeholder="Admin password">
+              <input type="text" name="password" class="password" placeholder="Admin password">
               <br />
               <h3 class="admin setup">Setup your team</h3>
-              <input type="text" class="team" placeholder="Team name">
+              <input type="text" name="team" class="team" placeholder="Team name">
             <br/>
             <input type="submit" class="signin signup" value="Setup > " onClick="setup()">
             </form>
